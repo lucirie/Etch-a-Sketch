@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    outline: 2px solid red;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    height: 10%;
+}
+
+.body {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+.container {
+    flex: 1;
+    width: 600px;
+}
+
+.footer {
+    height: 20%;
+}
