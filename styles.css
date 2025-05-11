@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* #FFD63A */
+
 body, html {
     margin: 0;
     height: 100%;
+    font-family: "Crafty Girls", cursive;
+    background-color: #F75A5A;
+    color: #FFD63A;
 }
 
 * {
-    outline: 2px solid red;
+    outline: 2px solid #FFD63A;
 }
 
 .wrapper {
@@ -15,6 +22,16 @@ body, html {
 
 .header {
     height: 10%;
+    color: #FFD63A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.header h1 {
+    font-size: 5rem;
+    text-shadow: 4px 4px #85193C;
 }
 
 .body {
@@ -33,4 +50,17 @@ body, html {
 
 .footer {
     height: 20%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px;
+    display: flex;
+}
+
+.selection {
+    width: 300px;
+    flex: 1;
+    align-self: center;
+    justify-self: center;
+    outline: dotted #FFD63A;
+    border-radius: 25px;
 }
