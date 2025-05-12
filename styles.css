@@ -44,8 +44,19 @@ body, html {
 }
 
 .container {
-    flex: 1;
+    height: 600px;
     width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    height: 100%;
+    display: flex;
+}
+
+.box {
+    flex: 1 1 auto;
 }
 
 .footer {

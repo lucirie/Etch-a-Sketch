@@ -12,3 +12,9 @@ function add_divs(size) {
         container.appendChild(row)
     }
 }
+
+function updateBoxes() {
+    container.innerHTML = "";
+    let divCount = document.getElementById("boxesCount").value;
+    add_divs(divCount);
+}
