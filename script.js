@@ -29,6 +29,12 @@ function detectHover(divCount) {
             let bg_colour = Math.floor(Math.random() * 16777216).toString(16);
             bg_colour = "#" + ("000000" + bg_colour).slice(-6);
             e.currentTarget.style.backgroundColor = bg_colour;
+            e.currentTarget.classList.add("fadeIn");
+            e.currentTarget.style.boxShadow = "0 0 10px black";
+            e.currentTarget.style.outline = "2px solid #FFD63A"
         })
     }
 }
+
+add_divs(10);
+detectHover(10)

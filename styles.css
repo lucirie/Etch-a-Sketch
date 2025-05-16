@@ -9,10 +9,10 @@ body, html {
     background-color: #F75A5A;
     color: #FFD63A;
 }
-
+/* 
 * {
     outline: 2px solid #FFD63A;
-}
+} */
 
 .wrapper {
     display: flex;
@@ -48,7 +48,13 @@ body, html {
     width: 600px;
     display: flex;
     flex-direction: column;
-    outline: 2px solid #FFD63A;
+}
+
+.outer-container {
+    padding: 20px;
+    border: 3px solid #FFD63A;
+    box-shadow: 0px 0px 10px #FFD63A;
+    border-radius: 25px;
 }
 
 .row {
@@ -58,7 +64,11 @@ body, html {
 
 .box {
     flex: 1 1 auto;
-    outline: 2px solid #FFD63A;
+    outline: 2px solid #ffe062;
+}
+
+.fadeIn {
+    animation: fade-in 0.5s;
 }
 
 .footer {
@@ -76,4 +86,9 @@ body, html {
     justify-self: center;
     outline: dotted #FFD63A;
     border-radius: 25px;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
 }
