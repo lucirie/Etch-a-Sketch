@@ -10,15 +10,15 @@
     <body>
         <div class="wrapper">
             <div class="header"><h1>Etch-a-Sketch</h1></div>
-            <div class="body">
-                <div class="outer-container">     
-                    <div class="container"></div>
-                </div>
+            <div class="body">  
+                <div class="container"></div>
             </div>
             <div class="footer">
                 <div class="selection">
-                    <input type="number" id="boxesCount" max="100">
-                    <button onclick="updateBoxes()">Update</button>
+                    <div class="input">
+                        <input type="range" id="boxesCount" min="0" max="100">
+                        <output type="number" class="output">10 x 10</output>
+                    </div>
                 </div>
             </div>
         </div>

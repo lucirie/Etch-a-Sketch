@@ -1,4 +1,6 @@
 const container = document.querySelector(".container");
+const input = document.getElementById("boxesCount");
+const output = document.querySelector("output");
 
 function add_divs(size) {
     for (i = 0; i < size; i++) {
@@ -15,12 +17,14 @@ function add_divs(size) {
     }
 }
 
-function updateBoxes() {
+input.addEventListener('input', () => {
     container.innerHTML = "";
     let divCount = document.getElementById("boxesCount").value;
     add_divs(divCount);
     detectHover(divCount);
-}
+    output.textContent = `${divCount} x ${divCount}`;
+});
+    
 
 function detectHover(divCount) {
     boxes = document.querySelectorAll(".box");
