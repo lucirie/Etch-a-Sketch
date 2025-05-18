@@ -9,10 +9,9 @@ body, html {
     background-color: #F75A5A;
     color: #FFD63A;
 }
-/* 
-* {
-    outline: 2px solid #FFD63A;
-} */
+body {
+    zoom: 0.65;
+}
 
 .wrapper {
     display: flex;
