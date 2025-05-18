@@ -1,6 +1,7 @@
 const container = document.querySelector(".container");
-const input = document.getElementById("boxesCount");
+const input = document.getElementById("myRange");
 const output = document.querySelector("output");
+const reset = document.querySelector(".reset")
 
 function add_divs(size) {
     for (i = 0; i < size; i++) {
@@ -19,10 +20,17 @@ function add_divs(size) {
 
 input.addEventListener('input', () => {
     container.innerHTML = "";
-    let divCount = document.getElementById("boxesCount").value;
+    let divCount = document.getElementById("myRange").value;
     add_divs(divCount);
     detectHover(divCount);
     output.textContent = `${divCount} x ${divCount}`;
+});
+
+reset.addEventListener('click', () => {
+    container.innerHTML = "";
+    let divCount = document.getElementById("myRange").value;
+    add_divs(divCount);
+    detectHover(divCount)
 });
     
 
@@ -40,5 +48,19 @@ function detectHover(divCount) {
     }
 }
 
-add_divs(10);
-detectHover(10)
+// Chatgpt generated code to stylize input
+
+const slider = document.getElementById("myRange");
+
+slider.addEventListener("input", () => {
+  const val = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+  slider.style.background = `linear-gradient(to right, yellow 0%, yellow ${val}%, #ccc ${val}%, #ccc 100%)`;
+});
+
+
+(function(){
+    socializer( '.socializer' );
+}());
+
+add_divs(50);
+detectHover(50)

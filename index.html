@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vaakash/socializer@f794acd/css/socializer.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
         <script src="script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/gh/vaakash/socializer@f794acd/js/socializer.min.js"></script>
         <title>Document</title>
     </head>
     <body>
@@ -15,10 +18,16 @@
             </div>
             <div class="footer">
                 <div class="selection">
-                    <div class="input">
-                        <input type="range" id="boxesCount" min="0" max="100">
-                        <output type="number" class="output">10 x 10</output>
+                    <div class="selection-items">
+                        <div class="input">
+                            <input type="range" class="slider" id="myRange" min="1" max="100" >
+                            <output type="number" class="output">10 x 10</output>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: center;"><button class="reset" id="bottone1" style="display: flex; justify-content: center; align-items: center;"><strong>Reset</strong></button></div>
                     </div>
+                </div>
+                <div class="socials">
+                    <div class="socializer" data-features="32px,zoom,icon-dark,bg-none,pad" data-meta-link="" data-meta-title="" data-sites="github,email,linkedin" data-meta-github="https://github.com/lucirie" data-meta-email="lucirieko@gmail.com" data-meta-linkedin="https://www.linkedin.com/in/ziad-alezzi-8727bb345/" data-text="in"></div>
                 </div>
             </div>
         </div>
